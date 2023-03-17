@@ -1,0 +1,151 @@
+.header {
+  .nav {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    justify-content: space-between;
+
+
+    .header_logo {
+      width: 130px;
+      height: 72px;
+      margin: 26px 84px 24px 62px;
+
+      @media screen and (max-width: 992px) {
+        margin: 26px 84px 24px 0px;
+      }
+    }
+
+    .navbar {
+      ul {
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+          display: block;
+          margin-top: 31px;
+          text-align: center;
+        }
+
+        li {
+          list-style: none;
+
+          @media screen and (max-width: 992px) {
+            padding-bottom: 16px;
+          }
+
+
+          a {
+            width: 46px;
+            height: 14px;
+            margin: 2px 5px 102px 40px;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            text-decoration: none;
+            font-style: normal;
+            line-height: 0.61;
+            letter-spacing: normal;
+            text-align: center;
+            color: $color-default;
+
+            &:hover {
+              color: $color-blue;
+            }
+          }
+
+          .contact {
+            width: 155px;
+            height: 17px;
+            // margin: 0 50px 100px 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.22px;
+            text-align: center;
+            color: $color-default;
+          }
+        }
+      }
+    }
+  }
+
+
+  .education_and_welfare {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+
+
+    .educational_title {
+      width: 424px;
+      height: 114px;
+      margin: 50px 25px 100px 60px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 50.5px;
+      font-weight: bold;
+
+      line-height: 1.18;
+      letter-spacing: 0.51px;
+      text-align: left;
+      color: #3b3a3a;
+    }
+
+    .educational_paragraph {
+      width: 404px;
+      height: 80px;
+      margin-left: 60px;
+      font-family: 'Lato', sans-serif;
+      font-size: 15px;
+
+      line-height: 1.42;
+      letter-spacing: 0.39px;
+      text-align: left;
+      color: #3b3a3a;
+    }
+
+    .education_n_welfare_img {
+      img {
+        width: 601px;
+        height: 410px;
+        // margin: 0 0px 0px 122px;
+        border-radius: 24px;
+        background-color: #fff;
+
+        @media screen and (max-width: 992px) {
+          margin: 100px 0 0 0px;
+        }
+      }
+    }
+
+  }
+
+  .bg_image {
+    position: absolute;
+    top: 0;
+    right: -122px;
+    z-index: -1;
+    width: 1030px;
+    height: 741px;
+
+    @media screen and (max-width: 992px) {
+
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 741px;
+    }
+
+  }
+
+}
